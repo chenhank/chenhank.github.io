@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-03-28T23:08:00+08:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>初始化部落格</title>
+    <link rel="alternate" href="http://blog.url.com/2015/03/28/setup-blog.html"/>
+    <id>http://blog.url.com/2015/03/28/setup-blog.html</id>
+    <published>2015-03-28T23:08:00+08:00</published>
+    <updated>2015-03-29T14:37:11+08:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h3 id="github"&gt;GitHub&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;設定 SSH Keys 可參考 &lt;a href="https://help.github.com/articles/generating-ssh-keys/"&gt;generate SSH Keys&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;上傳&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;git config –global user.email "you@example.com"&lt;/li&gt;
+      &lt;li&gt;git config –global user.name "Your Name"&lt;/li&gt;
+      &lt;li&gt;git remote add origin https://github.com/name/my_blog.git&lt;/li&gt;
+      &lt;li&gt;git push -u origin master&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="middleman"&gt;Middleman&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;查看版本
+middleman version&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;建立 blog
+middleman init my_blog –template=blog –rack&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在本機觀看
+middleman server&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;建立新文章
+middleman article "xxx"&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;編譯成靜態網頁
+middleman build&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;加入 LiveReload 功能&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Gemfile 加入 gem "middleman-livereload"&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Config.rb 加入 activate :livereload&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;執行 bundle install&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="markdown--dillinger"&gt;Markdown 語法查詢可參考 &lt;a href="http://dillinger.io/"&gt;DILLINGER&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id="quickly-initializing-a-static-middleman-website"&gt;一個不錯的教學影片: &lt;a href="https://youtu.be/5aTOxzJLzB4"&gt;Quickly Initializing a Static Middleman Website&lt;/a&gt;&lt;/h3&gt;
+
+</content>
+  </entry>
+</feed>
